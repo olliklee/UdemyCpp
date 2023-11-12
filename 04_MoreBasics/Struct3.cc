@@ -75,8 +75,7 @@ void print_vehicle_data_pointer(const Vehicle *vehicle)
 
 int main()
 {
-    const auto v1 =
-        Vehicle{.id = 1, .velocity = 22.0F, .lane = Lane::LEFT_LANE};
+    Vehicle v1 = { .id=1, .velocity=100.0f, .lane=Lane::CENTER_LANE};
     print_vehicle_data(v1);
 
     print_vehicle_data_pointer(&v1);
