@@ -16,7 +16,7 @@
 
 namespace
 {
-constexpr static auto NUM_RUNS = std::uint32_t{500};
+constexpr auto NUM_RUNS = std::uint32_t{500};
 }
 
 int main()

@@ -10,7 +10,7 @@
 
 namespace
 {
-constexpr static auto NUM_RUNS = std::size_t{5};
+constexpr auto NUM_RUNS = std::size_t{5};
 constexpr static auto ELEMENTS = std::size_t{100'000};
 } // namespace
 

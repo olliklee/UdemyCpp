@@ -1,23 +1,39 @@
 #include <iostream>
 
 #include "Matrix.h"
+#include "Timer.h"
+
+/*
+1:   us
+2:   us
+4:   us
+6:   us
+8:   us
+10:  us
+12:  us
+16:  us
+*/
+
+namespace
+{
+constexpr auto NUM_RUNS = std::uint32_t{500};
+}
 
 int main()
 {
-    auto m1 = Matrix<double>(2, 2, -1.0);
-    m1.print_matrix();
+    const auto m1 = Matrix<double>(500, 500, -1.0);
+    const auto m2 = Matrix<double>(500, 500, -1.0);
 
-    auto m2 = Matrix<double>(3, 2, 1.0);
-    m2.print_matrix();
+    double total_time = 0.0;
 
-    try
+    for (uint32_t i = 0; i < NUM_RUNS; ++i)
     {
-        auto m3 = m1 * m2;
+        const auto t = Timer{};
+        const auto m3 = m1 * m2;
+        total_time += t.elapsed_time<microsecs, double>();
     }
-    catch (const std::exception &e)
-    {
-        std::cerr << e.what() << '\n';
-    }
+
+    std::cout << "Mean time: " << total_time / NUM_RUNS << " us" << '\n';
 
     return 0;
 }

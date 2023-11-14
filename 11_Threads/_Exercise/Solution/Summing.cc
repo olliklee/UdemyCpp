@@ -23,7 +23,7 @@ Serial time:      4.569ms
 namespace
 {
 constexpr static auto NUM_THREADS = std::uint32_t{2};
-constexpr static auto NUM_RUNS = std::uint32_t{1'000};
+constexpr auto NUM_RUNS = std::uint32_t{1'000};
 } // namespace
 
 template <typename T>
