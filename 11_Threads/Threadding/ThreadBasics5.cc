@@ -9,7 +9,7 @@
 
 namespace
 {
-constexpr static auto NUM_THREADS = std::uint32_t{3U};
+constexpr auto NUM_THREADS = std::uint32_t{3U};
 constexpr static auto NUM_INCREMENTS = std::uint32_t{100'000};
 
 auto GLOBAL_COUNTER = std::uint32_t{0};

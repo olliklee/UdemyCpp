@@ -6,7 +6,7 @@
 
 namespace
 {
-constexpr static auto NUM_THREADS = std::uint32_t{3U};
+constexpr auto NUM_THREADS = std::uint32_t{3U};
 
 auto GLOBAL_COUNTER = std::uint32_t{0};
 constexpr static auto NUM_INCREMENTS = std::uint32_t{100'000};

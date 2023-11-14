@@ -6,7 +6,7 @@
 
 namespace
 {
-constexpr static auto NUM_THREADS = std::uint32_t{3U};
+constexpr auto NUM_THREADS = std::uint32_t{3U};
 }
 
 void function(const std::int32_t input, std::int32_t &output)
