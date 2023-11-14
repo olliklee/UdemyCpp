@@ -7,4 +7,19 @@ Deswegen müsst ihr diese nicht selber lösen, ihr könnt es aber gerne probiere
 
 ## Exercise 1
 
-TBD
+Auf unserem 2D-Spielfeld wollen wir jetzt noch Hindernisse einbauen.  
+Wenn der Spieler auf so ein Hindernis tritt, dann hat er das Spiel verloren.
+
+![Alt text](../media/Game6_1.png)
+
+Die Hindernisse sind das "X" auf dem Spielfeld.
+
+Diese werden wir jetzt erstmal konstant auf den folgenden Positionen setzen:
+
+```cpp
+const auto obstacles = std::vector<Coordinate>{
+    Coordinate{.x = 1, .y = 1},
+    Coordinate{.x = 2, .y = 2},
+    Coordinate{.x = 3, .y = 3},
+};
+```

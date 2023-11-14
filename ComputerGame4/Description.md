@@ -7,4 +7,14 @@ Deswegen müsst ihr diese nicht selber lösen, ihr könnt es aber gerne probiere
 
 ## Exercise 1
 
-TBD
+Wir werden jetzt unseren "game" Code in mehrere Funktionen auslagern:
+
+```cpp
+bool is_finished(const std::uint32_t player)
+
+void print_game_state(const std::uint32_t player)
+
+void execute_move(std::uint32_t &player, const char move)
+
+void game()
+```
