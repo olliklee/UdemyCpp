@@ -124,7 +124,8 @@
     "xlocmes": "cpp",
     "xlocmon": "cpp",
     "xloctime": "cpp",
-    "expected": "cpp"
+    "expected": "cpp",
+    "xhash": "cpp"
   },
   "files.insertFinalNewline": true,
   "files.trimFinalNewlines": true,

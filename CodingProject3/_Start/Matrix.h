@@ -132,6 +132,16 @@ Matrix<T> &Matrix<T>::operator*=(const Matrix &rhs)
 }
 
 template <typename T>
+std::size_t Matrix<T>::num_rows() const
+{
+}
+
+template <typename T>
+std::size_t Matrix<T>::num_cols() const
+{
+}
+
+template <typename T>
 void Matrix<T>::print_matrix() const
 {
     for (const auto &row : m_data)
@@ -143,14 +153,4 @@ void Matrix<T>::print_matrix() const
 
         std::cout << '\n';
     }
-}
-
-template <typename T>
-std::size_t Matrix<T>::num_rows() const
-{
-}
-
-template <typename T>
-std::size_t Matrix<T>::num_cols() const
-{
 }
