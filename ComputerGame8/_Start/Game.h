@@ -18,24 +18,43 @@ enum class ConsoleInput
     DOWN = 's',
 };
 
-std::int32_t random_int(const std::int32_t lower, const std::int32_t upper);
+class Game
+{
+Private:
+    constexpr static auto NUM_OBSTACLES = 3U;
+    constexpr static auto LEN_X = 5U;
+    constexpr static auto LEN_Y = 5U;
+    constexpr static auto START = Coordinate{.x = 0, .y = 0};
+    constexpr static auto GOAL = Coordinate{.x = LEN_X - 1, .y = LEN_Y - 1};
 
-std::uint32_t random_uint(const std::uint32_t lower, const std::uint32_t upper);
+    Coordinate player = {.x = 0, .y = 0};
+    std::vector<Coordinate> obstacles;
 
-Coordinate random_coord(const std::uint32_t lower_x,
-                        const std::uint32_t upper_x,
-                        const std::uint32_t lower_y,
-                        const std::uint32_t upper_y);
+public:
+    Game() : obstacles(std::vector<Coordinate>(NUM_OBSTACLES, Coordinate{})){};
+    ~Game() = default;
 
-void move_obstacles(std::vector<Coordinate> &obstacles);
+    void game();
 
-bool is_finished(const Coordinate &player);
+private:
+    static std::int32_t random_int(const std::int32_t lower,
+                                   const std::int32_t upper);
 
-void print_game_state(const Coordinate &player,
-                      const std::vector<Coordinate> &obstacles);
+    static std::uint32_t random_uint(const std::uint32_t lower,
+                                     const std::uint32_t upper);
 
-void execute_move(Coordinate &player,
-                  const ConsoleInput move,
-                  const std::vector<Coordinate> &obstacles);
+    static Coordinate random_coord(const std::uint32_t lower_x,
+                                   const std::uint32_t upper_x,
+                                   const std::uint32_t lower_y,
+                                   const std::uint32_t upper_y);
 
-void game();
+    bool has_obstacle(const Coordinate &coord);
+
+    void move_obstacles();
+
+    bool is_finished();
+
+    void print_game_state();
+
+    void execute_move(const ConsoleInput move);
+};
