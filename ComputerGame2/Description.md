@@ -13,12 +13,14 @@ Der User kann jetzt nicht nur einmalig nach links oder rechts gehen, sondern sol
 
 So würde der Terminal Output beim Start aussehen:
 
-![alt](./../../UdemyCpp/media/Game2_1.png)
+![alt](../media/Game2_1.png)
 
 Und so nachdem der Spieler sich mehrmals bewegt hat:
 
-![alt](./../../UdemyCpp/media/Game2_2.png)
+![alt](../media/Game2_2.png)
 
 - 'P' ist der Spieler
 - '|' ist der Startpunkt (links) und das Ziel (rechts)
 - '.' sind die restlichen Spielfelder
+
+Der Spieler hat das SPiel gewonnen, wenn er das ganz rechte Feld betritt.  
