@@ -8,8 +8,8 @@ Willkommen bei der nächsten Programmier-Übung in diesem Kurs.
 
 ## Aufgabe 1
 
-Initialisiert eine 3x3 Matrix in der Main Funktion, mit den Wert (i + j) an dem index matrix[i][j].
-Verwende dabei den vordefinierten Matrix Typ aus dem Header.
+Initialisiert eine 3x3 Matrix in der Main Funktion, mit dem Wert (i + j) an dem index matrix[i][j].
+Verwende dabei den vordefinierten Matrix-Typ aus dem Header.
 
 ### Beispiel Aufgabe 1
 
@@ -23,7 +23,7 @@ Schreibt eine Funktion
 VectorT max_row_values(MatrixT &matrix);
 ```
 
-die eine Matrix entgegennimmt und die Zeilenmaxima der Matrix berechnet und diese Maximima in einen neuen Vector abspeichert.Diesen neuen erstellten Vector returned die Funktion dann.
+die eine Matrix entgegennimmt und die Zeilenmaxima der Matrix berechnet und diese Maxima in einen neuen Vector abspeichert.Diesen neuen erstellten Vector returned die Funktion dann.
 
 ### Beispiel Aufgabe 2
 
