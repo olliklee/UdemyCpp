@@ -19,7 +19,7 @@ Schreibt eine Funktion
 vector<bool> shuffle_till_equal(const BinaryArray &target, BinaryArray input);
 ```
 
-Die einen Binären Vektor "target" und einen Binären Vektor "input" entgegennimmt.
+Die einen binären Vektor "target" und einen binären Vektor "input" entgegennimmt.
 Bei jeder Iteration muss überprüft werden, ob die beiden Vektoren die gleichen Werte haben.
 Sofern das so ist, kann die Funktion terminieren.
 Sofern das nicht der Fall ist, soll das (ganze) Input Arrays erneut ge-shuffelt werden.
