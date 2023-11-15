@@ -36,4 +36,6 @@ std::size_t DynamicArray<T>::get_length() const
 ```
 
 Vieles kann in abgewandelter Form von dem CodingProject1 kopiert werden.  
-Eigentlich is ja nur neu, dass es jetzt ein template typename T ist.
+Eigentlich ist ja nur neu, dass es jetzt ein template typename T ist, vorher war es ja ein festgelegter Datentyp.  
+Wirklich neu ist aber die Operator-Überladung für den Index-Operator ([]).  
+Dort wollen wir auf das darunterliegende Array zugreifen.  
