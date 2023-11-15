@@ -13,4 +13,4 @@ Der User kann per Terminal eingeben ob man sich nach links ('a') oder nacht rech
 
 So würde der Terminal Output dazu aussehen:
 
-![alt](./../../UdemyCpp/media/Game1_1.png)
+![alt](../media/Game1_1.png)
