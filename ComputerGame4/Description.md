@@ -18,3 +18,11 @@ void execute_move(std::uint32_t &player, const char move)
 
 void game()
 ```
+
+Das heißt in unserer "game" Funktionen werden:
+
+- is_finished
+- print_game_state
+- execute_move
+
+aufgerufen.
