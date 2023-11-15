@@ -12,7 +12,7 @@ Die Aufgabe ist es die Funktion
 void mod_cross_sum(int I, int J);
 ```
 
-zu programmieren die folgenden Output in der Konsole ausgibt:
+zu programmieren die folgenden Outputs in der Konsole ausgibt:
 
 Bei der Funktion ist es die Aufgabe, über eine gegebene Laufweite I und  Laufweite J zu iterieren.
 Bei jeder Iteration soll ausgegeben werden, ob die Summe des aktuellen i (for i in I) und j (for j in J) Gerade oder Ungerade ist.
