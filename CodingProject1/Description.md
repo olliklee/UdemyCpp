@@ -22,5 +22,5 @@ double mean(const DynamicArray &dynamic_array)
 
 double median(const DynamicArray &dynamic_array)
 ```
-Beachte dabei, dass der Mean (Mittelwert) und der Median unterschiedliche Sachen sind. 
-Außerdem kann man eine der Funktionen bei einer anderen wiederverwenden.  
+Beachte dabei, dass der Mean (Mittelwert) und der Median unterschiedliche Sachen sind.  
+Außerdem kann man eine der Funktionen bei einer anderen wiederverwenden.   
