@@ -20,6 +20,16 @@ enum class ConsoleInput
 
 class Game
 {
+Private:
+    constexpr static auto NUM_OBSTACLES = 3U;
+    constexpr static auto LEN_X = 5U;
+    constexpr static auto LEN_Y = 5U;
+    constexpr static auto START = Coordinate{.x = 0, .y = 0};
+    constexpr static auto GOAL = Coordinate{.x = LEN_X - 1, .y = LEN_Y - 1};
+
+    Coordinate player = {.x = 0, .y = 0};
+    std::vector<Coordinate> obstacles;
+
 public:
     Game() : obstacles(std::vector<Coordinate>(NUM_OBSTACLES, Coordinate{})){};
     ~Game() = default;
@@ -47,13 +57,4 @@ private:
     void print_game_state();
 
     void execute_move(const ConsoleInput move);
-
-    constexpr static auto NUM_OBSTACLES = 3U;
-    constexpr static auto LEN_X = 5U;
-    constexpr static auto LEN_Y = 5U;
-    constexpr static auto START = Coordinate{.x = 0, .y = 0};
-    constexpr static auto GOAL = Coordinate{.x = LEN_X - 1, .y = LEN_Y - 1};
-
-    Coordinate player = {.x = 0, .y = 0};
-    std::vector<Coordinate> obstacles;
 };
