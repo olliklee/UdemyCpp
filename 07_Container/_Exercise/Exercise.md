@@ -35,4 +35,4 @@ std::string_view get_heaviest_friend(const Friends &friends);
 
 Um die älteste Person bzw. die schwerste Person aus deiner Map auszugeben.
 Wende beide Funktionen auf die Map deiner Freunde an und gebe die Daten aus.
-Das heißt, bestimme wer die älteste und wer die schwerste Person ist.
+Das heißt, bestimme, wer die älteste und wer die schwerste Person ist.
