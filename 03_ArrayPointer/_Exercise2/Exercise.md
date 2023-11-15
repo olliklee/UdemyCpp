@@ -6,10 +6,10 @@ Willkommen bei der nächsten Programmier-Übung in diesem Kurs.
 
 ## Vorwort
 
-In dieser Programmierübung wollen wir uns überlegen, wie wir "Dynamische Arrays" implementieren können.
-Diese beschreiben Heap-Arrays, bei denen man die Größe ändern kann.
+In dieser Programmier-Übung wollen wir uns überlegen, wie wir "Dynamische Arrays" implementieren können.  
+Diese beschreiben Heap-Arrays, bei denen man die Größe ändern kann.  
 Indem man entweder neuen Speicher auf dem Heap reserviert, oder Speicher wieder freigibt. (Stichwort: new und delete)
-Diese Dynamischen Arrays werden später in der Standard-Bibliothek "Vector" (Vektoren) genannt.
+Diese dynamischen Arrays werden später in der Standard-Bibliothek "Vector" (Vektoren) genannt.  
 
 ## Aufgaben der Programmierübung
 
@@ -21,7 +21,7 @@ Schreibe eine Funktion
 void push_back(int* &input_array, const std::size_t size, const int value);
 ```
 
-die ein Element am Ende des dynamischen Arrays hinzufügt. Beachte dabei, dass sich somit die Länge des Arrays um Eins erhöht.
+die ein Element am Ende des dynamischen Arrays hinzufügt. Beachte dabei, dass sich somit die Länge des Arrays um eins erhöht.
 
 ### Aufgabe 2
 
@@ -31,7 +31,7 @@ Schreibe eine Funktion
 void pop_back(int* &input_array, const std::size_t size);
 ```
 
-die das letzte Element des dynamischen Arrays entfernt. Beachte dabei, dass sich somit die Länge des Arrays um Eins reduziert.
+die das letzte Element des dynamischen Arrays entfernt. Beachte dabei, dass sich somit die Länge des Arrays um eins reduziert.
 
 ### Beispiel
 
