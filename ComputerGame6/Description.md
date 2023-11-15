@@ -8,7 +8,8 @@ Deswegen müsst ihr diese nicht selber lösen, ihr könnt es aber gerne probiere
 ## Exercise 1
 
 Auf unserem 2D-Spielfeld wollen wir jetzt noch Hindernisse einbauen.  
-Wenn der Spieler auf so ein Hindernis tritt, dann hat er das Spiel verloren.
+Wenn der Spieler auf so ein Hindernis tritt, dann hat er das Spiel verloren.  
+Das heißt ja auch, dass die while Schleife vorzeitig beendet werden kann.
 
 ![Alt text](../media/Game6_1.png)
 
@@ -23,3 +24,5 @@ const auto obstacles = std::vector<Coordinate>{
     Coordinate{.x = 3, .y = 3},
 };
 ```
+
+Anmerkung: Da die Anzahl an Hindernisse constant ist könnte man auch ein Array anstatt einem Vector verwenden.
