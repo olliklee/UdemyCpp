@@ -4,7 +4,7 @@ Hallo Leute!
 
 Willkommen bei der nächsten Programmier-Übung in diesem Kurs.
 
-## Aufgaben der Programmierübung
+## Aufgaben der Programmier-Übung
 
 ### Aufgabe 1
 
@@ -16,11 +16,11 @@ Schreibt dann eine Funktion,
 double array_sum(double *p_array, const std::size_t length)
 ```
 
-die ein Pointer Array vom Typ double entgegennimmt (1. Argument), die Länge des Arrays entgegennimmt (2. Argument) und die Summe des Arrays berechnet und zurückgibt.
+die ein Pointer Array vom Typ double, entgegennimmt (1. Argument), die Länge des Arrays entgegennimmt (2. Argument) und die Summe des Arrays berechnet und zurückgibt.
 
 ### Beispiel 1
 
-Das heißt bei dem Array mit 100 Elementen würde folgende Summe heraus kommen:
+Das heißt, bei dem Array mit 100 Elementen würde folgende Summe herauskommen:
 
 ```cpp
 auto *d = new double[100];
@@ -48,4 +48,4 @@ auto* array = array_constructor(5, 3)
 // array = { 5, 5, 5}
 ```
 
-Das heißt wenn ihr sagt, dass Array soll 3 Elemente haben und der Wert ist 5, resultiert ein Array mit 3 Indizes, bei denen überall der Wert 5 ist.
+Das heißt wenn, ihr sagt das Array soll 3 Elemente haben und der Wert ist 5, resultiert ein Array mit 3 Indizes, bei denen überall der Wert 5 ist.
